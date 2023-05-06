@@ -43,13 +43,13 @@ export default function Home() {
           className="progress-bar"
           style={{ scaleX: scrollYProgress }}
           />
-        <div className='bg-cta-home bg-center bg-fixed bg-cover w-full min-h-screen flex items-center justify-center'>
+        <div className='bg-cta-home bg-left md:bg-center bg-fixed bg-cover w-full min-h-screen flex items-center justify-center'>
           <div className='p-12 md:p-24 text-center'>
             <Fade bottom>
             <Image src={logo}  className='block mx-auto' alt='Logo Advec'/>
               <h1 className='text-white text-4xl pt-10 pb-4 uppercase font-bold'>Seja bem Vindo a <strong>ADVEC</strong></h1>
               <h2 className='text-teal text-2xl uppercase font-bold mt-0'>Somos a Igreja da Palavra</h2>
-              <p className='text-white mt-2 lg:px-48 font-light text-md'>Aqui, você encontrará um lugar onde pode se sentir em casa e ser parte de uma comunidade vibrante e acolhedora. Na nossa igreja, você encontrará uma variedade de ministérios e atividades para todas as idades e interesses, desde grupos de estudo bíblico até programas de música e arte. Nós nos esforçamos para criar um ambiente onde todos se sintam bem-vindos e amados, independentemente de sua origem ou história. Então, se você está procurando um lugar para se conectar com Deus venha e faça parte da nossa família.</p>
+              <p className='text-white mt-2 lg:px-48 font-light text-md'>Aqui, você encontrará um lugar onde pode se sentir em casa e ser parte de uma comunidade vibrante e acolhedora. Na nossa igreja, você encontrará uma variedade de ministérios e atividades para todas as idades e interesses, desde grupos de estudo bíblico até programas de música e arte.</p>
               <span className='text-white border-2 border-solid border-teal cursor-pointer rounded p-2 inline-block font-bold mt-6 animate-pulse' onClick={() => setTogglerVoluntario(!togglerVoluntario)}>Quero ser voluntário</span>
             </Fade>
           </div>
@@ -79,7 +79,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='bg-pillars bg-fixed bg-center bg-cover w-full p-24 flex items-center justify-center'>
+        <div className='bg-pillars bg-fixed bg-left md:bg-center bg-cover w-full p-24 flex items-center justify-center'>
           <div className='p-12 md:p-24 text-center'>
             <Fade bottom>
             <h4 className='text-white text-4xl pt-10 pb-4 uppercase font-bold'>OS QUATRO <strong className='text-teal block'>PILARES FUNDAMENTAIS</strong> DA ADVEC</h4>
