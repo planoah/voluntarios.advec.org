@@ -138,8 +138,8 @@ export default function Home() {
             <iframe
             key='video'
 						src="https://docs.google.com/forms/d/e/1FAIpQLScWyd-IcBPMypVqqeHWgPJAfWLIt0Ggje47n8eJCX-jJsWv1g/viewform"
-						// width="1920px"
-						// height="1080px"
+						width="1920px"
+						height="1080px"
 						frameBorder="0"
             title='Seja um voluntário'
 						allowFullScreen
