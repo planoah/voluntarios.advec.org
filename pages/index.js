@@ -136,6 +136,7 @@ export default function Home() {
           toggler={togglerVoluntario}
           sources={[
             <iframe
+            key='video'
 						src="https://docs.google.com/forms/d/e/1FAIpQLScWyd-IcBPMypVqqeHWgPJAfWLIt0Ggje47n8eJCX-jJsWv1g/viewform"
 						// width="1920px"
 						// height="1080px"
