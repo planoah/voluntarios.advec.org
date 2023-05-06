@@ -19,6 +19,7 @@ export default function Home() {
 
   const [youtube, setYoutube] = useState('')
   const [toggler, setToggler] = useState(false);
+  const [togglerVoluntario, setTogglerVoluntario] = useState(false);
 
   useEffect(()=>{
     setYoutube('https://www.youtube.com/watch?v=_0NnVudfYh0')
@@ -33,6 +34,7 @@ export default function Home() {
           <Image src={logo}  className='block mx-auto' alt='Logo Advec'/>
           <h1 className='text-white text-4xl pt-10 pb-4 uppercase font-bold'>Seja bem Vindo a <strong>ADVEC</strong></h1>
           <h2 className='text-white text-2xl uppercase font-bold mt-0'>Somos a Igreja da Palavra</h2>
+          <span className='text-white border-2 border-solid border-white cursor-pointer rounded p-2 inline-block font-bold mt-6' onClick={() => setTogglerVoluntario(!togglerVoluntario)}>Quero ser voluntário</span>
 
         </div>
       </div>
@@ -98,10 +100,58 @@ export default function Home() {
       <div className='bg-winne lg:bg-silas bg-left bg-cover w-full p-12 sm:p-24 flex items-center justify-center lg:justify-end'>
         <div className='p-5 md:p-24 text-center lg:text-end w-full lg:w-5/6'>
           <h4 className='text-white text-4xl pt-10 lg:pl-56 pb-4 uppercase font-bold'>PASTOR <strong>SILAS MALAFAIA</strong></h4>
-          <Image src={silas}  className='block mx-auto rounded-3xl shadow-2xl mb-4 block lg:hidden' alt='Logo Advec'/>
+          <Image src={silas}  className='block mx-auto rounded-3xl shadow-2xl mb-4 block lg:hidden' alt='Pr. Silas e Esposa'/>
           <p className='text-white text-lg lg:pl-56'>Defende incansavelmente a fé cristã, os princípios e valores éticos, morais e espirituais da igreja de Jesus Cristo. Lidera há 12 anos a nossa igreja. Conferencista cada vez mais reconhecido, o pastor Silas Malafaia é um incansável pregador da Palavra de Deus com livre circulação nas diversas denominações existentes no Brasil e no exterior. Seu estilo eloqüente, franco, direto e questionador são características que marcam a sua trajetória ao longo de 28 anos como defensor da fé cristã.</p>
         </div>
       </div>
+
+      <div className='bg-blue bg-left bg-cover w-full p-12 sm:p-24 flex items-center justify-center flex-wrap relative overflow-hidden'>
+        <div className='p-5 lg:p-24 text-center lg:text-end w-full lg:w-3/6 z-10'>
+          <h4 className='text-white text-4xl pt-10 pb-4 uppercase font-bold'>Seja um <strong>voluntário</strong></h4>
+          <p className='text-white text-lg'>Se você quer fazer a diferença na sua comunidade, ser voluntário na ADVEC pode ser uma ótima opção. Como voluntário, você pode ajudar em uma variedade de atividades, desde a organização de eventos até o trabalho comunitário. Além disso, você terá a chance de conhecer novas pessoas e fazer amizades duradouras, além de contribuir ativamente no Reino de Deus. Junte-se a nós e faça parte de algo maior!</p>
+        </div>
+        <div className='p-5 pl-0 pr-0 lg:pr-24  text-center lg:text-end w-full lg:w-3/6'>
+         <ul className='flex flex-wrap gap-4 items-center justify-center lg:justify-start'>
+          <li className='bg-white hover:bg-white/90 rounded p-2 inline-block font-medium'>Connect</li>
+          <li className='bg-white hover:bg-white/90 rounded p-2 inline-block font-medium'>UNA</li>
+          <li className='bg-white hover:bg-white/90 rounded p-2 inline-block font-medium'>EBD</li>
+          <li className='bg-white hover:bg-white/90 rounded p-2 inline-block font-medium'>Interligados</li>
+          <li className='bg-white hover:bg-white/90 rounded p-2 inline-block font-medium'>Interligados Kids</li>
+          <li className='bg-white hover:bg-white/90 rounded p-2 inline-block font-medium'>Família</li>
+          <li className='bg-white hover:bg-white/90 rounded p-2 inline-block font-medium'>Intercessão</li>
+          <li className='bg-white hover:bg-white/90 rounded p-2 inline-block font-medium'>Mulheres Vitoriosas</li>
+          <li className='bg-white hover:bg-white/90 rounded p-2 inline-block font-medium'>Homens Vencedores</li>
+          <li className='bg-white hover:bg-white/90 rounded p-2 inline-block font-medium'>Música</li>
+          <li className='bg-white hover:bg-white/90 rounded p-2 inline-block font-medium'>Obreiros</li>
+          <li className='bg-white hover:bg-white/90 rounded p-2 inline-block font-medium'>Renovo</li>
+          <li className='bg-white hover:bg-white/90 rounded p-2 inline-block font-medium'>Recomeço</li>
+          <li className='bg-white hover:bg-white/90 rounded p-2 inline-block font-medium'>Sócioambiental</li>
+          <li className='bg-white hover:bg-white/90 rounded p-2 inline-block font-medium'>Surdos</li>
+          <li className='bg-white hover:bg-white/90 rounded p-2 inline-block font-medium'>Vencedores Renovados</li>
+          <li className='text-white border-2 border-solid border-white cursor-pointer rounded p-2 inline-block font-medium' onClick={() => setTogglerVoluntario(!togglerVoluntario)}>Quero ser voluntário</li>
+        </ul>
+
+        			
+        <FsLightbox
+          toggler={togglerVoluntario}
+          sources={[
+            <iframe
+						src="https://docs.google.com/forms/d/e/1FAIpQLScWyd-IcBPMypVqqeHWgPJAfWLIt0Ggje47n8eJCX-jJsWv1g/viewform"
+						// width="1920px"
+						// height="1080px"
+						frameBorder="0"
+            title='Seja um voluntário'
+						allowFullScreen
+					/>
+          ]}
+        />
+
+        </div>
+      </div>
+
+      <footer className='bg-blue/95 w-full text-center p-4 uppercase text-white text-xs'>
+        Igreja Assembléia de Deus - Vitória em Cristo - 2023
+      </footer>
 
 
 
