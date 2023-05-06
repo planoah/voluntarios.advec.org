@@ -13,7 +13,13 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'cta-home' : "url('../public/bg-cta.jpg')",
         'pillars' : "url('../public/pillars.jpg')",
+        'silas' : "url('../public/bg-silas.jpg')",
       },
+      colors: {
+        'blue': '#00112d',
+        'gray': '#6c6869',
+        'winne': '#5a1c21',
+      }
     },
   },
   plugins: [],
