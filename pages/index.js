@@ -31,7 +31,7 @@ export default function Home() {
     <main
       className={`flex min-h-screen flex-col items-center justify-between ${inter.className}`}
     >
-      <div className='bg-cta-home bg-center bg-cover w-full min-h-screen flex items-center justify-center'>
+      <div className='bg-cta-home bg-center bg-fixed bg-cover w-full min-h-screen flex items-center justify-center'>
         <div className='p-12 md:p-24 text-center'>
           <Image src={logo}  className='block mx-auto' alt='Logo Advec'/>
           <h1 className='text-white text-4xl pt-10 pb-4 uppercase font-bold'>Seja bem Vindo a <strong>ADVEC</strong></h1>
