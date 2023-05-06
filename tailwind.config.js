@@ -14,6 +14,7 @@ module.exports = {
         'cta-home' : "url('../public/bg-cta.jpg')",
         'pillars' : "url('../public/pillars.jpg')",
         'silas' : "url('../public/bg-silas.jpg')",
+        'silas2' : "url('../public/silas.jpg')",
         'volunteer' : "url('../public/volunteer.jpg')",
       },
       colors: {

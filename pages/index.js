@@ -13,6 +13,8 @@ import logo from '@/public/logo-white.png'
 import thumb from '@/public/thumb.jpg'
 import silas from '@/public/photo-silas.jpg'
 
+import { motion, useScroll } from "framer-motion"
+
 import Fade from 'react-reveal/Fade';
 
 const inter = Inter({ subsets: ['latin'] })
@@ -23,6 +25,8 @@ export default function Home() {
   const [toggler, setToggler] = useState(false);
   const [togglerVoluntario, setTogglerVoluntario] = useState(false);
 
+  const { scrollYProgress } = useScroll();
+
   useEffect(()=>{
     setYoutube('https://www.youtube.com/watch?v=_0NnVudfYh0')
   })
@@ -31,6 +35,10 @@ export default function Home() {
     <main
       className={`flex min-h-screen flex-col items-center justify-between ${inter.className}`}
     >
+      <motion.div
+        className="progress-bar"
+        style={{ scaleX: scrollYProgress }}
+      />
       <div className='bg-cta-home bg-center bg-fixed bg-cover w-full min-h-screen flex items-center justify-center'>
         <div className='p-12 md:p-24 text-center'>
           <Fade bottom>
@@ -43,7 +51,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='bg-blue bg-center bg-cover w-full flex items-center justify-center'>
+      <div className='bg-silas2 bg-center bg-fixed bg-cover w-full flex items-center justify-center'>
         <div className='p-12 md:p-24 text-center'>
         <Fade bottom>
         <h3 className='text-white text-2xl pt-10 pb-4 uppercase font-bold'>Uma mensagem do <strong className='text-teal'>Pastor Silas Malafaia</strong> especialmente para você!</h3>
@@ -106,7 +114,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='bg-winne lg:bg-silas bg-left bg-cover w-full p-12 sm:p-24 flex items-center justify-center lg:justify-end'>
+      <div className='bg-teal lg:bg-silas bg-left bg-cover w-full p-12 sm:p-24 flex items-center justify-center lg:justify-end'>
         <div className='p-5 md:p-24 text-center lg:text-end w-full lg:w-5/6'>
           <Fade bottom>
             <h4 className='text-white text-4xl pt-10 lg:pl-56 pb-4 uppercase font-bold'>PASTOR <strong>SILAS MALAFAIA</strong></h4>
@@ -157,8 +165,8 @@ export default function Home() {
             <iframe
             key='video'
 						src="https://docs.google.com/forms/d/e/1FAIpQLScWyd-IcBPMypVqqeHWgPJAfWLIt0Ggje47n8eJCX-jJsWv1g/viewform"
-						width="1920px"
-						height="1080px"
+						width="900"
+						height="900px"
 						frameBorder="0"
             title='Seja um voluntário'
 						allowFullScreen

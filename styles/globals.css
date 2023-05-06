@@ -39,3 +39,18 @@ body {
     height: 300px
   }
 }
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: #017f8e;
+  transform-origin: 0%;
+  z-index: 100;
+}
+
+iframe{
+  min-height: 450px;
+}
