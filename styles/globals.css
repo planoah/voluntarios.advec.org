@@ -25,3 +25,12 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.youtube-iframe iframe{
+  height: 250px
+}
+@media screen and (max-width: 992px) {
+  .youtube-iframe iframe{
+    height: 180px
+  }
+}
