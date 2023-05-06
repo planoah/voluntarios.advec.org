@@ -58,7 +58,7 @@ export default function Home() {
         <div className='bg-silas2 bg-center bg-fixed bg-cover w-full flex items-center justify-center'>
           <div className='p-12 md:p-24 text-center'>
           <Fade bottom>
-          <h3 className='text-white text-xl md:text-2xl pt-10 pb-4 uppercase font-bold'>Uma mensagem do <strong className='text-teal block'>Pastor Silas Malafaia</strong> especialmente para você!</h3>
+          <h3 className='text-blue text-xl md:text-2xl pt-10 pb-4 uppercase font-bold'>Uma mensagem do <strong className='text-teal block'>Pastor Silas Malafaia</strong> especialmente para você!</h3>
           </Fade>
           <div className='w-full md:w-4/6 mx-auto rounded-2xl overflow-hidden mt-6'>
 
