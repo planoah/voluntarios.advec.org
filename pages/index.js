@@ -33,18 +33,20 @@ export default function Home() {
     >
       <div className='bg-cta-home bg-center bg-fixed bg-cover w-full min-h-screen flex items-center justify-center'>
         <div className='p-12 md:p-24 text-center'>
+          <Fade bottom>
           <Image src={logo}  className='block mx-auto' alt='Logo Advec'/>
-          <h1 className='text-white text-4xl pt-10 pb-4 uppercase font-bold'>Seja bem Vindo a <strong>ADVEC</strong></h1>
-          <h2 className='text-white text-2xl uppercase font-bold mt-0'>Somos a Igreja da Palavra</h2>
-          <span className='text-white border-2 border-solid border-white cursor-pointer rounded p-2 inline-block font-bold mt-6 animate-pulse' onClick={() => setTogglerVoluntario(!togglerVoluntario)}>Quero ser voluntário</span>
-
+            <h1 className='text-white text-4xl pt-10 pb-4 uppercase font-bold'>Seja bem Vindo a <strong>ADVEC</strong></h1>
+            <h2 className='text-teal text-2xl uppercase font-bold mt-0'>Somos a Igreja da Palavra</h2>
+            <p className='text-white mt-2 md:px-48'>Aqui, você encontrará um lugar onde pode se sentir em casa e ser parte de uma comunidade vibrante e acolhedora. Na nossa igreja, você encontrará uma variedade de ministérios e atividades para todas as idades e interesses, desde grupos de estudo bíblico até programas de música e arte. Nós nos esforçamos para criar um ambiente onde todos se sintam bem-vindos e amados, independentemente de sua origem ou história. Então, se você está procurando um lugar para se conectar com Deus venha e faça parte da nossa família.</p>
+            <span className='text-white border-2 border-solid border-teal cursor-pointer rounded p-2 inline-block font-bold mt-6 animate-pulse' onClick={() => setTogglerVoluntario(!togglerVoluntario)}>Quero ser voluntário</span>
+          </Fade>
         </div>
       </div>
 
       <div className='bg-blue bg-center bg-cover w-full flex items-center justify-center'>
         <div className='p-12 md:p-24 text-center'>
         <Fade bottom>
-        <h3 className='text-white text-2xl pt-10 pb-4 uppercase font-bold'>Uma mensagem do <strong>Pastor Silas Malafaia</strong> especialmente para você!</h3>
+        <h3 className='text-white text-2xl pt-10 pb-4 uppercase font-bold'>Uma mensagem do <strong className='text-teal'>Pastor Silas Malafaia</strong> especialmente para você!</h3>
         </Fade>
         <div className='w-full md:w-4/6 mx-auto rounded-2xl overflow-hidden mt-6'>
 
@@ -65,12 +67,12 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='bg-pillars bg-center bg-cover w-full p-24 flex items-center justify-center'>
+      <div className='bg-pillars bg-fixed bg-center bg-cover w-full p-24 flex items-center justify-center'>
         <div className='p-12 md:p-24 text-center'>
           <Fade bottom>
-          <h4 className='text-white text-4xl pt-10 pb-4 uppercase font-bold'>OS QUATRO <strong>PILARES FUNDAMENTAIS</strong> DA ADVEC</h4>
+          <h4 className='text-white text-4xl pt-10 pb-4 uppercase font-bold'>OS QUATRO <strong className='text-teal'>PILARES FUNDAMENTAIS</strong> DA ADVEC</h4>
           <p className='text-white text-xl'>Para que, se eu demorar, você saiba como as pessoas devem se comportar na casa de Deus. Ela é a igreja do Deus vivo, coluna e alicerce da verdade.</p>
-          <p className='text-white mt-2 text-xl uppercase font-bold'>- 1 Timóteo 3:15 -</p>
+          <p className='text-teal mt-2 text-xl uppercase font-bold'>- 1 Timóteo 3:15 -</p>
           </Fade>
           <Fade bottom>
             <div className='w-full mt-6'>
@@ -114,10 +116,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='bg-blue bg-left bg-cover w-full p-12 sm:p-24 flex items-center justify-center flex-wrap relative overflow-hidden'>
+      <div className='bg-volunteer bg-left bg-cover w-full p-12 sm:p-24 flex items-center justify-center flex-wrap relative overflow-hidden'>
         <Fade bottom>
         <div className='p-5 lg:p-24 text-center lg:text-end w-full lg:w-3/6 z-10'>
-          <h4 className='text-white text-4xl pt-10 pb-4 uppercase font-bold'>Seja um <strong>voluntário</strong></h4>
+          <h4 className='text-white text-4xl pt-10 pb-4 uppercase font-bold'>Seja um <strong className='text-teal'>voluntário</strong></h4>
           <p className='text-white text-lg'>Se você quer fazer a diferença na sua comunidade, ser voluntário na ADVEC pode ser uma ótima opção. Como voluntário, você pode ajudar em uma variedade de atividades, desde a organização de eventos até o trabalho comunitário. Além disso, você terá a chance de conhecer novas pessoas e fazer amizades duradouras, além de contribuir ativamente no Reino de Deus. Junte-se a nós e faça parte de algo maior!</p>
         </div>
         <div className='p-5 pl-0 pr-0 lg:pr-24  text-center lg:text-end w-full lg:w-3/6'>
@@ -138,10 +140,17 @@ export default function Home() {
           <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium'>Sócioambiental</li>
           <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium'>Surdos</li>
           <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium'>Vencedores Renovados</li>
-          <li className='text-white border-2 border-solid border-white cursor-pointer rounded p-2 inline-block font-medium' onClick={() => setTogglerVoluntario(!togglerVoluntario)}>Quero ser voluntário</li>
+          <li className='text-white border-2 border-solid border-teal cursor-pointer rounded p-2 inline-block font-medium' onClick={() => setTogglerVoluntario(!togglerVoluntario)}>Quero ser voluntário</li>
         </ul>
 
-        			
+        </div>
+        </Fade>
+      </div>
+
+      <footer className='bg-blue/95 w-full text-center p-4 uppercase text-white text-xs'>
+        Igreja Assembléia de Deus - Vitória em Cristo - 2023
+      </footer>
+
         <FsLightbox
           toggler={togglerVoluntario}
           sources={[
@@ -156,16 +165,6 @@ export default function Home() {
 					/>
           ]}
         />
-
-        </div>
-        </Fade>
-      </div>
-
-      <footer className='bg-blue/95 w-full text-center p-4 uppercase text-white text-xs'>
-        Igreja Assembléia de Deus - Vitória em Cristo - 2023
-      </footer>
-
-
 
     </main>
   )

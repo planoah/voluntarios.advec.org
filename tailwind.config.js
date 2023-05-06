@@ -14,11 +14,13 @@ module.exports = {
         'cta-home' : "url('../public/bg-cta.jpg')",
         'pillars' : "url('../public/pillars.jpg')",
         'silas' : "url('../public/bg-silas.jpg')",
+        'volunteer' : "url('../public/volunteer.jpg')",
       },
       colors: {
         'blue': '#00112d',
         'gray': '#6c6869',
         'winne': '#5a1c21',
+        'teal': '#017f8e',
       }
     },
   },
