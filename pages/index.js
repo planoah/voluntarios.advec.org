@@ -49,7 +49,7 @@ export default function Home() {
             <Image src={logo}  className='block mx-auto' alt='Logo Advec'/>
               <h1 className='text-white text-4xl pt-10 pb-4 uppercase font-bold'>Seja bem Vindo a <strong>ADVEC</strong></h1>
               <h2 className='text-teal text-2xl uppercase font-bold mt-0'>Somos a Igreja da Palavra</h2>
-              <p className='text-white mt-2 md:px-48'>Aqui, você encontrará um lugar onde pode se sentir em casa e ser parte de uma comunidade vibrante e acolhedora. Na nossa igreja, você encontrará uma variedade de ministérios e atividades para todas as idades e interesses, desde grupos de estudo bíblico até programas de música e arte. Nós nos esforçamos para criar um ambiente onde todos se sintam bem-vindos e amados, independentemente de sua origem ou história. Então, se você está procurando um lugar para se conectar com Deus venha e faça parte da nossa família.</p>
+              <p className='text-white mt-2 lg:px-48 font-thin text-md'>Aqui, você encontrará um lugar onde pode se sentir em casa e ser parte de uma comunidade vibrante e acolhedora. Na nossa igreja, você encontrará uma variedade de ministérios e atividades para todas as idades e interesses, desde grupos de estudo bíblico até programas de música e arte. Nós nos esforçamos para criar um ambiente onde todos se sintam bem-vindos e amados, independentemente de sua origem ou história. Então, se você está procurando um lugar para se conectar com Deus venha e faça parte da nossa família.</p>
               <span className='text-white border-2 border-solid border-teal cursor-pointer rounded p-2 inline-block font-bold mt-6 animate-pulse' onClick={() => setTogglerVoluntario(!togglerVoluntario)}>Quero ser voluntário</span>
             </Fade>
           </div>
@@ -58,7 +58,7 @@ export default function Home() {
         <div className='bg-silas2 bg-center bg-fixed bg-cover w-full flex items-center justify-center'>
           <div className='p-12 md:p-24 text-center'>
           <Fade bottom>
-          <h3 className='text-white text-2xl pt-10 pb-4 uppercase font-bold'>Uma mensagem do <strong className='text-teal'>Pastor Silas Malafaia</strong> especialmente para você!</h3>
+          <h3 className='text-white text-xl md:text-2xl pt-10 pb-4 uppercase font-bold'>Uma mensagem do <strong className='text-teal block'>Pastor Silas Malafaia</strong> especialmente para você!</h3>
           </Fade>
           <div className='w-full md:w-4/6 mx-auto rounded-2xl overflow-hidden mt-6'>
 
@@ -82,8 +82,8 @@ export default function Home() {
         <div className='bg-pillars bg-fixed bg-center bg-cover w-full p-24 flex items-center justify-center'>
           <div className='p-12 md:p-24 text-center'>
             <Fade bottom>
-            <h4 className='text-white text-4xl pt-10 pb-4 uppercase font-bold'>OS QUATRO <strong className='text-teal'>PILARES FUNDAMENTAIS</strong> DA ADVEC</h4>
-            <p className='text-white text-xl'>Para que, se eu demorar, você saiba como as pessoas devem se comportar na casa de Deus. Ela é a igreja do Deus vivo, coluna e alicerce da verdade.</p>
+            <h4 className='text-white text-4xl pt-10 pb-4 uppercase font-bold'>OS QUATRO <strong className='text-teal block'>PILARES FUNDAMENTAIS</strong> DA ADVEC</h4>
+            <p className='text-white font-thin text-md'>Para que, se eu demorar, você saiba como as pessoas devem se comportar na casa de Deus. Ela é a igreja do Deus vivo, coluna e alicerce da verdade.</p>
             <p className='text-teal mt-2 text-xl uppercase font-bold'>- 1 Timóteo 3:15 -</p>
             </Fade>
             <Fade bottom>
@@ -121,9 +121,9 @@ export default function Home() {
         <div className='bg-teal lg:bg-silas bg-left bg-cover w-full p-12 sm:p-24 flex items-center justify-center lg:justify-end'>
           <div className='p-5 md:p-24 text-center lg:text-end w-full lg:w-5/6'>
             <Fade bottom>
-              <h4 className='text-white text-4xl pt-10 lg:pl-56 pb-4 uppercase font-bold'>PASTOR <strong>SILAS MALAFAIA</strong></h4>
+              <h4 className='text-white text-4xl pt-10 lg:pl-56 pb-4 uppercase font-bold'>PASTOR <strong className='block'>SILAS MALAFAIA</strong></h4>
               <Image src={silas}  className='block mx-auto rounded-3xl shadow-2xl mb-4 block lg:hidden' alt='Pr. Silas e Esposa'/>
-              <p className='text-white text-lg lg:pl-56'>Defende incansavelmente a fé cristã, os princípios e valores éticos, morais e espirituais da igreja de Jesus Cristo. Lidera há 12 anos a nossa igreja. Conferencista cada vez mais reconhecido, o pastor Silas Malafaia é um incansável pregador da Palavra de Deus com livre circulação nas diversas denominações existentes no Brasil e no exterior. Seu estilo eloqüente, franco, direto e questionador são características que marcam a sua trajetória ao longo de 28 anos como defensor da fé cristã.</p>
+              <p className='text-white font-thin text-md lg:pl-56'>Defende incansavelmente a fé cristã, os princípios e valores éticos, morais e espirituais da igreja de Jesus Cristo. Lidera há 12 anos a nossa igreja. Conferencista cada vez mais reconhecido, o pastor Silas Malafaia é um incansável pregador da Palavra de Deus com livre circulação nas diversas denominações existentes no Brasil e no exterior. Seu estilo eloqüente, franco, direto e questionador são características que marcam a sua trajetória ao longo de 28 anos como defensor da fé cristã.</p>
             </Fade>
           </div>
         </div>
@@ -132,27 +132,27 @@ export default function Home() {
           <Fade bottom>
           <div className='p-5 lg:p-24 text-center lg:text-end w-full lg:w-3/6 z-10'>
             <h4 className='text-white text-4xl pt-10 pb-4 uppercase font-bold'>Seja um <strong className='text-teal'>voluntário</strong></h4>
-            <p className='text-white text-lg'>Se você quer fazer a diferença na sua comunidade, ser voluntário na ADVEC pode ser uma ótima opção. Como voluntário, você pode ajudar em uma variedade de atividades, desde a organização de eventos até o trabalho comunitário. Além disso, você terá a chance de conhecer novas pessoas e fazer amizades duradouras, além de contribuir ativamente no Reino de Deus. Junte-se a nós e faça parte de algo maior!</p>
+            <p className='text-white font-thin text-md'>Se você quer fazer a diferença na sua comunidade, ser voluntário na ADVEC pode ser uma ótima opção. Como voluntário, você pode ajudar em uma variedade de atividades, desde a organização de eventos até o trabalho comunitário. Além disso, você terá a chance de conhecer novas pessoas e fazer amizades duradouras, além de contribuir ativamente no Reino de Deus. Junte-se a nós e faça parte de algo maior!</p>
           </div>
           <div className='p-5 pl-0 pr-0 lg:pr-24  text-center lg:text-end w-full lg:w-3/6'>
           <ul className='flex flex-wrap gap-4 items-center justify-center lg:justify-start'>
-            <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium'>Connect</li>
-            <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium'>UNA</li>
-            <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium'>EBD</li>
-            <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium'>Interligados</li>
-            <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium'>Interligados Kids</li>
-            <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium'>Família</li>
-            <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium'>Intercessão</li>
-            <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium'>Mulheres Vitoriosas</li>
-            <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium'>Homens Vencedores</li>
-            <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium'>Música</li>
-            <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium'>Obreiros</li>
-            <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium'>Renovo</li>
-            <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium'>Recomeço</li>
-            <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium'>Sócioambiental</li>
-            <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium'>Surdos</li>
-            <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium'>Vencedores Renovados</li>
-            <li className='text-white border-2 border-solid border-teal cursor-pointer rounded p-2 inline-block font-medium' onClick={() => setTogglerVoluntario(!togglerVoluntario)}>Quero ser voluntário</li>
+            <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium text-sm'>Connect</li>
+            <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium text-sm'>UNA</li>
+            <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium text-sm'>EBD</li>
+            <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium text-sm'>Interligados</li>
+            <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium text-sm'>Interligados Kids</li>
+            <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium text-sm'>Família</li>
+            <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium text-sm'>Intercessão</li>
+            <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium text-sm'>Mulheres Vitoriosas</li>
+            <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium text-sm'>Homens Vencedores</li>
+            <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium text-sm'>Música</li>
+            <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium text-sm'>Obreiros</li>
+            <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium text-sm'>Renovo</li>
+            <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium text-sm'>Recomeço</li>
+            <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium text-sm'>Sócioambiental</li>
+            <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium text-sm'>Surdos</li>
+            <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium text-sm'>Vencedores Renovados</li>
+            <li className='text-white border-2 border-solid border-teal cursor-pointer rounded p-2 inline-block font-medium text-sm' onClick={() => setTogglerVoluntario(!togglerVoluntario)}>Quero ser voluntário</li>
           </ul>
 
           </div>
