@@ -4,7 +4,7 @@ function Collapse({ title, children }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className='bg-white p-4 rounded-lg w-full md:w-1/2 mx-auto mb-2'>
+    <div className='bg-white text-blue p-4 rounded-lg w-full md:w-1/2 mx-auto mb-2'>
       <button onClick={() => setIsExpanded(!isExpanded)} className='w-full font-bold'>
         {title} {isExpanded ? '-' : '+'}
       </button>

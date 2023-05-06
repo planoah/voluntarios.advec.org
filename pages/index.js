@@ -112,22 +112,22 @@ export default function Home() {
         </div>
         <div className='p-5 pl-0 pr-0 lg:pr-24  text-center lg:text-end w-full lg:w-3/6'>
          <ul className='flex flex-wrap gap-4 items-center justify-center lg:justify-start'>
-          <li className='bg-white hover:bg-white/90 rounded p-2 inline-block font-medium'>Connect</li>
-          <li className='bg-white hover:bg-white/90 rounded p-2 inline-block font-medium'>UNA</li>
-          <li className='bg-white hover:bg-white/90 rounded p-2 inline-block font-medium'>EBD</li>
-          <li className='bg-white hover:bg-white/90 rounded p-2 inline-block font-medium'>Interligados</li>
-          <li className='bg-white hover:bg-white/90 rounded p-2 inline-block font-medium'>Interligados Kids</li>
-          <li className='bg-white hover:bg-white/90 rounded p-2 inline-block font-medium'>Família</li>
-          <li className='bg-white hover:bg-white/90 rounded p-2 inline-block font-medium'>Intercessão</li>
-          <li className='bg-white hover:bg-white/90 rounded p-2 inline-block font-medium'>Mulheres Vitoriosas</li>
-          <li className='bg-white hover:bg-white/90 rounded p-2 inline-block font-medium'>Homens Vencedores</li>
-          <li className='bg-white hover:bg-white/90 rounded p-2 inline-block font-medium'>Música</li>
-          <li className='bg-white hover:bg-white/90 rounded p-2 inline-block font-medium'>Obreiros</li>
-          <li className='bg-white hover:bg-white/90 rounded p-2 inline-block font-medium'>Renovo</li>
-          <li className='bg-white hover:bg-white/90 rounded p-2 inline-block font-medium'>Recomeço</li>
-          <li className='bg-white hover:bg-white/90 rounded p-2 inline-block font-medium'>Sócioambiental</li>
-          <li className='bg-white hover:bg-white/90 rounded p-2 inline-block font-medium'>Surdos</li>
-          <li className='bg-white hover:bg-white/90 rounded p-2 inline-block font-medium'>Vencedores Renovados</li>
+          <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium'>Connect</li>
+          <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium'>UNA</li>
+          <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium'>EBD</li>
+          <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium'>Interligados</li>
+          <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium'>Interligados Kids</li>
+          <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium'>Família</li>
+          <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium'>Intercessão</li>
+          <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium'>Mulheres Vitoriosas</li>
+          <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium'>Homens Vencedores</li>
+          <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium'>Música</li>
+          <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium'>Obreiros</li>
+          <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium'>Renovo</li>
+          <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium'>Recomeço</li>
+          <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium'>Sócioambiental</li>
+          <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium'>Surdos</li>
+          <li className='bg-white text-blue hover:bg-white/90 rounded p-2 inline-block font-medium'>Vencedores Renovados</li>
           <li className='text-white border-2 border-solid border-white cursor-pointer rounded p-2 inline-block font-medium' onClick={() => setTogglerVoluntario(!togglerVoluntario)}>Quero ser voluntário</li>
         </ul>
 
