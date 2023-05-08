@@ -44,40 +44,28 @@ export default function Home() {
           style={{ scaleX: scrollYProgress }}
           />
         <div className='bg-cta-home bg-left md:bg-center bg-fixed bg-cover w-full min-h-screen flex items-center justify-center'>
-          <div className='p-12 md:p-24 text-center'>
+          <div className='p-12 md:p-24 text-center w-full md:w-4/5'>
             <Fade bottom>
             <Image src={logo}  className='block mx-auto' alt='Logo Advec'/>
               <h1 className='text-white text-4xl pt-10 pb-4 uppercase font-bold'>Seja bem Vindo a <strong>ADVEC</strong></h1>
-              <h2 className='text-teal text-2xl uppercase font-bold mt-0'>Somos a Igreja da Palavra</h2>
-              <p className='text-white mt-2 lg:px-48 font-light text-md'>Aqui, você encontrará um lugar onde pode se sentir em casa e ser parte de uma comunidade vibrante e acolhedora. Na nossa igreja, você encontrará uma variedade de ministérios e atividades para todas as idades e interesses, desde grupos de estudo bíblico até programas de música e arte.</p>
+              {/* <p className='text-white mt-2 lg:px-48 font-light text-md'>Aqui, você encontrará um lugar onde pode se sentir em casa e ser parte de uma comunidade vibrante e acolhedora. Na nossa igreja, você encontrará uma variedade de ministérios e atividades para todas as idades e interesses, desde grupos de estudo bíblico até programas de música e arte.</p> */}
+              <button onClick={() => setToggler(!toggler)} className=''>
+                <Fade bottom>
+                  <Image src={thumb}  className='block mx-auto mt-4 w-full md:w-3/5 rounded-lg overflow-hidden shadow-2xl' alt='Thumb Advec'/>
+                </Fade>
+              </button>
+              <h2 className='text-teal text-2xl uppercase font-bold mt-4'>Somos a Igreja da Palavra</h2>
               {/* <span className='text-white border-2 border-solid border-teal cursor-pointer rounded p-2 inline-block font-bold mt-6 animate-pulse' onClick={() => setTogglerVoluntario(!togglerVoluntario)}>Quero ser voluntário</span> */}
             </Fade>
           </div>
         </div>
 
-        <div className='bg-silas2 bg-center bg-fixed bg-cover w-full flex items-center justify-center'>
-          <div className='p-12 md:p-24 text-center'>
-          <Fade bottom>
-          <h3 className='text-blue text-xl md:text-2xl pt-10 pb-4 uppercase font-bold'>Uma mensagem do <strong className='text-teal block'>Pastor Silas Malafaia</strong> especialmente para você!</h3>
-          </Fade>
-          <div className='w-full md:w-4/6 mx-auto rounded-2xl overflow-hidden mt-6'>
-
-        <button onClick={() => setToggler(!toggler)}>
-          <Fade bottom>
-            <Image src={thumb}  className='block mx-auto shadow-xl' alt='Thumb Advec'/>
-          </Fade>
-        </button>
         <FsLightbox
           toggler={toggler}
           sources={[
             "https://www.youtube.com/watch?v=_0NnVudfYh0"
           ]}
         />
-
-          </div>
-
-          </div>
-        </div>
 
         <div className='bg-pillars bg-fixed bg-left md:bg-center bg-cover w-full p-24 flex items-center justify-center'>
           <div className='p-12 md:p-24 text-center'>
