@@ -50,7 +50,7 @@ export default function Home() {
               <h1 className='text-white text-4xl pt-10 pb-4 uppercase font-bold'>Seja bem Vindo a <strong>ADVEC</strong></h1>
               <h2 className='text-teal text-2xl uppercase font-bold mt-0'>Somos a Igreja da Palavra</h2>
               <p className='text-white mt-2 lg:px-48 font-light text-md'>Aqui, você encontrará um lugar onde pode se sentir em casa e ser parte de uma comunidade vibrante e acolhedora. Na nossa igreja, você encontrará uma variedade de ministérios e atividades para todas as idades e interesses, desde grupos de estudo bíblico até programas de música e arte.</p>
-              <span className='text-white border-2 border-solid border-teal cursor-pointer rounded p-2 inline-block font-bold mt-6 animate-pulse' onClick={() => setTogglerVoluntario(!togglerVoluntario)}>Quero ser voluntário</span>
+              {/* <span className='text-white border-2 border-solid border-teal cursor-pointer rounded p-2 inline-block font-bold mt-6 animate-pulse' onClick={() => setTogglerVoluntario(!togglerVoluntario)}>Quero ser voluntário</span> */}
             </Fade>
           </div>
         </div>
